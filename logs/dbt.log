@@ -1,0 +1,476 @@
+
+
+============================== 2023-04-27 15:35:16.510226 | 1632b41d-9245-42bd-9418-0089ee5f4b54 ==============================
+[0m15:35:16.510226 [info ] [MainThread]: Running with dbt=1.4.6
+[0m15:35:16.510934 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/sauravsengupta/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'project_name': 'first_project', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m15:35:16.511026 [debug] [MainThread]: Tracking: tracking
+[0m15:35:16.521149 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1081f0610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108269940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1082360a0>]}
+[0m15:35:16.521756 [info ] [MainThread]: Creating dbt configuration folder at /Users/sauravsengupta/.dbt
+[0m15:35:16.522522 [debug] [MainThread]: Starter project path: /Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/dbt/include/starter_project
+[0m15:37:33.719747 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10762c640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1088c1070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1088c1df0>]}
+[0m15:37:33.720827 [debug] [MainThread]: Flushing usage events
+[0m15:37:33.837574 [error] [MainThread]: Encountered an error:
+
+[0m15:37:33.848976 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/dbt/main.py", line 136, in main
+    results, succeeded = handle_and_check(args)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/dbt/main.py", line 206, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/dbt/main.py", line 253, in run_from_args
+    results = task.run()
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/dbt/task/init.py", line 305, in run
+    self.create_profile_from_target(adapter, profile_name=project_name)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/dbt/task/init.py", line 180, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/dbt/task/init.py", line 164, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/dbt/task/init.py", line 130, in generate_target_from_input
+    target[key] = click.prompt(
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/click/termui.py", line 166, in prompt
+    value = prompt_func(prompt)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/click/termui.py", line 149, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+
+
+============================== 2023-04-27 15:46:17.231484 | 117c2c1d-4fd6-4fa9-9c24-729fb929e2c7 ==============================
+[0m15:46:17.231484 [info ] [MainThread]: Running with dbt=1.4.6
+[0m15:46:17.232228 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/sauravsengupta/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'project_name': 'first_project.', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m15:46:17.232355 [debug] [MainThread]: Tracking: tracking
+[0m15:46:17.241022 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1056aa9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105681430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105694280>]}
+[0m15:46:25.749221 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105694490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1056aa9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1056a3220>]}
+[0m15:46:25.750601 [debug] [MainThread]: Flushing usage events
+[0m15:46:25.903363 [error] [MainThread]: Encountered an error:
+
+[0m15:46:25.916292 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/dbt/main.py", line 136, in main
+    results, succeeded = handle_and_check(args)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/dbt/main.py", line 206, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/dbt/main.py", line 253, in run_from_args
+    results = task.run()
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/dbt/task/init.py", line 286, in run
+    project_name = self.get_valid_project_name()
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/dbt/task/init.py", line 243, in get_valid_project_name
+    name = click.prompt("Enter a name for your project (letters, digits, underscore)")
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/click/termui.py", line 166, in prompt
+    value = prompt_func(prompt)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/click/termui.py", line 149, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+
+
+============================== 2023-04-27 15:46:30.166802 | 0e064464-02d2-45e4-9398-766dcd8430b1 ==============================
+[0m15:46:30.166802 [info ] [MainThread]: Running with dbt=1.4.6
+[0m15:46:30.167507 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/sauravsengupta/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'project_name': 'first_project', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m15:46:30.167600 [debug] [MainThread]: Tracking: tracking
+[0m15:46:30.177154 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1055769d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10554d430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105560280>]}
+[0m15:46:30.178432 [info ] [MainThread]: A project called first_project already exists here.
+[0m15:46:30.178666 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10554d430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1055769d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105560280>]}
+[0m15:46:30.178816 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-04-27 15:46:43.833978 | 66a17113-5f53-4fb7-bdf2-96acfa471ebe ==============================
+[0m15:46:43.833978 [info ] [MainThread]: Running with dbt=1.4.6
+[0m15:46:43.834710 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/sauravsengupta/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'project_name': 'first_project', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m15:46:43.834803 [debug] [MainThread]: Tracking: tracking
+[0m15:46:43.843820 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104af99a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104ad1850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104ae3040>]}
+[0m15:46:43.845135 [debug] [MainThread]: Starter project path: /Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/dbt/include/starter_project
+[0m15:49:03.027667 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103dc7490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1053ce700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1053ce310>]}
+[0m15:49:03.030396 [debug] [MainThread]: Flushing usage events
+[0m15:49:03.182928 [error] [MainThread]: Encountered an error:
+
+[0m15:49:03.194900 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/dbt/main.py", line 136, in main
+    results, succeeded = handle_and_check(args)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/dbt/main.py", line 206, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/dbt/main.py", line 253, in run_from_args
+    results = task.run()
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/dbt/task/init.py", line 305, in run
+    self.create_profile_from_target(adapter, profile_name=project_name)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/dbt/task/init.py", line 180, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/dbt/task/init.py", line 164, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/dbt/task/init.py", line 130, in generate_target_from_input
+    target[key] = click.prompt(
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/click/termui.py", line 166, in prompt
+    value = prompt_func(prompt)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/click/termui.py", line 149, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+
+
+============================== 2023-04-27 15:49:25.762664 | 73162eae-1ad8-473f-abd6-923f24358a77 ==============================
+[0m15:49:25.762664 [info ] [MainThread]: Running with dbt=1.4.6
+[0m15:49:25.763374 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/sauravsengupta/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m15:49:25.763468 [debug] [MainThread]: Tracking: tracking
+[0m15:49:25.771783 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1076b29d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107689430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10769c280>]}
+[0m15:49:27.917492 [debug] [MainThread]: Starter project path: /Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/dbt/include/starter_project
+[0m15:49:41.308335 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107d4bee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107d4be80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107d4bac0>]}
+[0m15:49:41.309447 [debug] [MainThread]: Flushing usage events
+[0m15:49:41.372426 [error] [MainThread]: Encountered an error:
+
+[0m15:49:41.381675 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/dbt/main.py", line 136, in main
+    results, succeeded = handle_and_check(args)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/dbt/main.py", line 206, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/dbt/main.py", line 253, in run_from_args
+    results = task.run()
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/dbt/task/init.py", line 305, in run
+    self.create_profile_from_target(adapter, profile_name=project_name)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/dbt/task/init.py", line 180, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/dbt/task/init.py", line 164, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/dbt/task/init.py", line 130, in generate_target_from_input
+    target[key] = click.prompt(
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/click/termui.py", line 166, in prompt
+    value = prompt_func(prompt)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/click/termui.py", line 149, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+
+
+============================== 2023-04-27 15:49:56.439054 | e7d61411-df3f-4f44-8d06-1351a4432b79 ==============================
+[0m15:49:56.439054 [info ] [MainThread]: Running with dbt=1.4.6
+[0m15:49:56.439747 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/sauravsengupta/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'config_dir': True, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m15:49:56.439852 [debug] [MainThread]: Tracking: tracking
+[0m15:49:56.448594 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105d798e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105d51850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105d64310>]}
+[0m15:49:56.449160 [info ] [MainThread]: To view your profiles.yml file, run:
+
+open /Users/sauravsengupta/.dbt
+[0m15:49:56.449378 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105d798e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105d64310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105d64cd0>]}
+[0m15:49:56.449508 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-04-27 15:50:22.436274 | cf47bb77-e024-406b-adbd-62d9296597e7 ==============================
+[0m15:50:22.436274 [info ] [MainThread]: Running with dbt=1.4.6
+[0m15:50:22.436979 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/sauravsengupta/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'project_name': 'first_project', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m15:50:22.437075 [debug] [MainThread]: Tracking: tracking
+[0m15:50:22.446001 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110111a60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1100e9460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1100fc7f0>]}
+[0m15:50:22.447088 [debug] [MainThread]: Starter project path: /Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/dbt/include/starter_project
+[0m15:51:43.251960 [info ] [MainThread]: Profile first_project written to /Users/sauravsengupta/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m15:51:43.253203 [info ] [MainThread]: 
+Your new dbt project "first_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m15:51:43.253910 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1100fc700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110111970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1100d38b0>]}
+[0m15:51:43.254442 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-04-27 16:17:56.313626 | 8096a9bd-eebc-40cb-b53e-3531a05ef32c ==============================
+[0m16:17:56.313626 [info ] [MainThread]: Running with dbt=1.4.6
+[0m16:17:56.314509 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/sauravsengupta/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'project_name': 'DS5559_LAB', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m16:17:56.314618 [debug] [MainThread]: Tracking: tracking
+[0m16:17:56.324370 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10395c910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1039451f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1039581f0>]}
+[0m16:17:56.325502 [debug] [MainThread]: Starter project path: /Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/dbt/include/starter_project
+[0m16:17:56.330284 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10395d940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10395dd00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10395d880>]}
+[0m16:17:56.330516 [debug] [MainThread]: Flushing usage events
+[0m16:17:56.470847 [error] [MainThread]: Encountered an error:
+mapping values are not allowed here
+  in "/Users/sauravsengupta/.dbt/profiles.yml", line 7, column 12
+[0m16:17:56.480335 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/dbt/main.py", line 136, in main
+    results, succeeded = handle_and_check(args)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/dbt/main.py", line 206, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/dbt/main.py", line 253, in run_from_args
+    results = task.run()
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/dbt/task/init.py", line 302, in run
+    if not self.check_if_can_write_profile(profile_name=project_name):
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/dbt/task/init.py", line 201, in check_if_can_write_profile
+    profiles = yaml.safe_load(f) or {}
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/__init__.py", line 81, in load
+    return loader.get_single_data()
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/parser.py", line 428, in parse_block_mapping_key
+    if self.check_token(KeyToken):
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/scanner.py", line 116, in check_token
+    self.fetch_more_tokens()
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/scanner.py", line 223, in fetch_more_tokens
+    return self.fetch_value()
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/scanner.py", line 577, in fetch_value
+    raise ScannerError(None, None,
+yaml.scanner.ScannerError: mapping values are not allowed here
+  in "/Users/sauravsengupta/.dbt/profiles.yml", line 7, column 12
+
+
+
+============================== 2023-04-27 16:18:32.242473 | 5e078c10-36ad-4263-bfb9-c5cdb58a622c ==============================
+[0m16:18:32.242473 [info ] [MainThread]: Running with dbt=1.4.6
+[0m16:18:32.243156 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/sauravsengupta/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'project_name': 'DS5559_LAB', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m16:18:32.243251 [debug] [MainThread]: Tracking: tracking
+[0m16:18:32.254432 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107a798b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107a51460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107a647f0>]}
+[0m16:18:32.255583 [info ] [MainThread]: A project called DS5559_LAB already exists here.
+[0m16:18:32.255792 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107a3b8b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107a51460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107a79a60>]}
+[0m16:18:32.255923 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-04-27 16:18:42.940721 | 27a00cc9-0338-46f8-b2fd-a064e4efcf83 ==============================
+[0m16:18:42.940721 [info ] [MainThread]: Running with dbt=1.4.6
+[0m16:18:42.941434 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/sauravsengupta/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'project_name': 'DS5559_LAB', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m16:18:42.941539 [debug] [MainThread]: Tracking: tracking
+[0m16:18:42.950340 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105382850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105359430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10536c280>]}
+[0m16:18:42.951619 [debug] [MainThread]: Starter project path: /Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/dbt/include/starter_project
+[0m16:18:42.955954 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105372850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105372910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105372730>]}
+[0m16:18:42.956124 [debug] [MainThread]: Flushing usage events
+[0m16:18:43.011656 [error] [MainThread]: Encountered an error:
+mapping values are not allowed here
+  in "/Users/sauravsengupta/.dbt/profiles.yml", line 7, column 12
+[0m16:18:43.021416 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/dbt/main.py", line 136, in main
+    results, succeeded = handle_and_check(args)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/dbt/main.py", line 206, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/dbt/main.py", line 253, in run_from_args
+    results = task.run()
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/dbt/task/init.py", line 302, in run
+    if not self.check_if_can_write_profile(profile_name=project_name):
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/dbt/task/init.py", line 201, in check_if_can_write_profile
+    profiles = yaml.safe_load(f) or {}
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/__init__.py", line 81, in load
+    return loader.get_single_data()
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/parser.py", line 428, in parse_block_mapping_key
+    if self.check_token(KeyToken):
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/scanner.py", line 116, in check_token
+    self.fetch_more_tokens()
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/scanner.py", line 223, in fetch_more_tokens
+    return self.fetch_value()
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/scanner.py", line 577, in fetch_value
+    raise ScannerError(None, None,
+yaml.scanner.ScannerError: mapping values are not allowed here
+  in "/Users/sauravsengupta/.dbt/profiles.yml", line 7, column 12
+
+
+
+============================== 2023-04-27 16:21:42.981304 | 173f93b0-ea09-4b03-adff-3e3172bebd96 ==============================
+[0m16:21:42.981304 [info ] [MainThread]: Running with dbt=1.4.6
+[0m16:21:42.982007 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/sauravsengupta/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'project_name': 'DS5559_LAB', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m16:21:42.982099 [debug] [MainThread]: Tracking: tracking
+[0m16:21:42.991098 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106686850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10665d430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106670280>]}
+[0m16:21:42.992169 [debug] [MainThread]: Starter project path: /Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/dbt/include/starter_project
+[0m16:21:42.996226 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106676850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106676910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106676730>]}
+[0m16:21:42.996391 [debug] [MainThread]: Flushing usage events
+[0m16:21:43.105952 [error] [MainThread]: Encountered an error:
+mapping values are not allowed here
+  in "/Users/sauravsengupta/.dbt/profiles.yml", line 7, column 12
+[0m16:21:43.112954 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/dbt/main.py", line 136, in main
+    results, succeeded = handle_and_check(args)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/dbt/main.py", line 206, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/dbt/main.py", line 253, in run_from_args
+    results = task.run()
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/dbt/task/init.py", line 302, in run
+    if not self.check_if_can_write_profile(profile_name=project_name):
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/dbt/task/init.py", line 201, in check_if_can_write_profile
+    profiles = yaml.safe_load(f) or {}
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/__init__.py", line 81, in load
+    return loader.get_single_data()
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/parser.py", line 428, in parse_block_mapping_key
+    if self.check_token(KeyToken):
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/scanner.py", line 116, in check_token
+    self.fetch_more_tokens()
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/scanner.py", line 223, in fetch_more_tokens
+    return self.fetch_value()
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/scanner.py", line 577, in fetch_value
+    raise ScannerError(None, None,
+yaml.scanner.ScannerError: mapping values are not allowed here
+  in "/Users/sauravsengupta/.dbt/profiles.yml", line 7, column 12
+
+
+
+============================== 2023-04-27 16:22:28.234714 | 95b538ab-2956-4d13-b0f0-b2ac67e40107 ==============================
+[0m16:22:28.234714 [info ] [MainThread]: Running with dbt=1.4.6
+[0m16:22:28.235406 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/sauravsengupta/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'project_name': 'DS5559_LAB', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m16:22:28.235498 [debug] [MainThread]: Tracking: tracking
+[0m16:22:28.243621 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1041d6850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1041ad430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1041c0280>]}
+[0m16:22:28.244780 [info ] [MainThread]: A project called DS5559_LAB already exists here.
+[0m16:22:28.245033 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1041ad430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1041d6850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1041c0280>]}
+[0m16:22:28.245176 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-04-27 16:22:35.206383 | f7267f66-f43c-4513-8627-d5e2bc117238 ==============================
+[0m16:22:35.206383 [info ] [MainThread]: Running with dbt=1.4.6
+[0m16:22:35.207076 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/sauravsengupta/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'project_name': 'DS5559_LAB', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m16:22:35.207169 [debug] [MainThread]: Tracking: tracking
+[0m16:22:35.215626 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1071c5910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10719d1f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1071b01f0>]}
+[0m16:22:35.216764 [debug] [MainThread]: Starter project path: /Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/dbt/include/starter_project
+[0m16:22:35.220690 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1071b6940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1071b6d00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1071b6880>]}
+[0m16:22:35.220857 [debug] [MainThread]: Flushing usage events
+[0m16:22:35.267778 [error] [MainThread]: Encountered an error:
+mapping values are not allowed here
+  in "/Users/sauravsengupta/.dbt/profiles.yml", line 7, column 12
+[0m16:22:35.275381 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/dbt/main.py", line 136, in main
+    results, succeeded = handle_and_check(args)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/dbt/main.py", line 206, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/dbt/main.py", line 253, in run_from_args
+    results = task.run()
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/dbt/task/init.py", line 302, in run
+    if not self.check_if_can_write_profile(profile_name=project_name):
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/dbt/task/init.py", line 201, in check_if_can_write_profile
+    profiles = yaml.safe_load(f) or {}
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/__init__.py", line 81, in load
+    return loader.get_single_data()
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/parser.py", line 428, in parse_block_mapping_key
+    if self.check_token(KeyToken):
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/scanner.py", line 116, in check_token
+    self.fetch_more_tokens()
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/scanner.py", line 223, in fetch_more_tokens
+    return self.fetch_value()
+  File "/Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/yaml/scanner.py", line 577, in fetch_value
+    raise ScannerError(None, None,
+yaml.scanner.ScannerError: mapping values are not allowed here
+  in "/Users/sauravsengupta/.dbt/profiles.yml", line 7, column 12
+
+
+
+============================== 2023-04-27 16:24:17.615252 | fd452438-19a5-4861-8457-e64b0e3ba623 ==============================
+[0m16:24:17.615252 [info ] [MainThread]: Running with dbt=1.4.6
+[0m16:24:17.616089 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/sauravsengupta/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'project_name': 'DS5559_LAB', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m16:24:17.616203 [debug] [MainThread]: Tracking: tracking
+[0m16:24:17.625658 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1048548e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10483d910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104850430>]}
+[0m16:24:17.626697 [debug] [MainThread]: Starter project path: /Users/sauravsengupta/Documents/Spring2023/Data_Engineering/DS5559_dbt_lab/env/lib/python3.9/site-packages/dbt/include/starter_project
+[0m16:25:54.572310 [info ] [MainThread]: Profile DS5559_LAB written to /Users/sauravsengupta/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m16:25:54.573474 [info ] [MainThread]: 
+Your new dbt project "DS5559_LAB" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m16:25:54.574108 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104850c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103c3f340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10483d910>]}
+[0m16:25:54.574527 [debug] [MainThread]: Flushing usage events
